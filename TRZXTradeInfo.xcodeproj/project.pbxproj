@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		70FA49BAB2DA46ACB84B48C7 /* libPods-TRZXTradeInfoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2C3F360B777CBC882F258F7 /* libPods-TRZXTradeInfoUITests.a */; };
 		76B549221E5D955000847D6C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B549211E5D955000847D6C /* main.m */; };
 		76B549251E5D955000847D6C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B549241E5D955000847D6C /* AppDelegate.m */; };
 		76B549281E5D955000847D6C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B549271E5D955000847D6C /* ViewController.m */; };
@@ -15,6 +16,14 @@
 		76B549301E5D955000847D6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76B5492E1E5D955000847D6C /* LaunchScreen.storyboard */; };
 		76B5493B1E5D955000847D6C /* TRZXTradeInfoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B5493A1E5D955000847D6C /* TRZXTradeInfoTests.m */; };
 		76B549461E5D955000847D6C /* TRZXTradeInfoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B549451E5D955000847D6C /* TRZXTradeInfoUITests.m */; };
+		76B549561E5D991900847D6C /* TRHelpInfoTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B549551E5D991900847D6C /* TRHelpInfoTypeViewController.m */; };
+		76B5495A1E5D993400847D6C /* SCPopCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B549581E5D993400847D6C /* SCPopCollectionCell.m */; };
+		76B5495B1E5D993400847D6C /* SCPopCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76B549591E5D993400847D6C /* SCPopCollectionCell.xib */; };
+		76B549621E5D997500847D6C /* TRNewChildrenModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B5495F1E5D997500847D6C /* TRNewChildrenModel.m */; };
+		76B549631E5D997500847D6C /* TRNewTradeInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B549611E5D997500847D6C /* TRNewTradeInfoModel.m */; };
+		76B549691E5D9A3900847D6C /* TRZXTradeInfoRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B549681E5D9A3900847D6C /* TRZXTradeInfoRequest.m */; };
+		A4913E760FD059649E74F34A /* libPods-TRZXTradeInfo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B20907FD95E1AEBC8DE9E195 /* libPods-TRZXTradeInfo.a */; };
+		D88377364744863AB9BA347C /* libPods-TRZXTradeInfoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62BC42E55A2AFE89212BA327 /* libPods-TRZXTradeInfoTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F6AB42F9B267BBDF7655C7B /* Pods-TRZXTradeInfoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRZXTradeInfoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TRZXTradeInfoUITests/Pods-TRZXTradeInfoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		62BC42E55A2AFE89212BA327 /* libPods-TRZXTradeInfoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TRZXTradeInfoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68C5B1A3CFB9B9C26C1A9B64 /* Pods-TRZXTradeInfoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRZXTradeInfoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TRZXTradeInfoTests/Pods-TRZXTradeInfoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6EF20D5D7762040686DA7096 /* Pods-TRZXTradeInfoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRZXTradeInfoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TRZXTradeInfoTests/Pods-TRZXTradeInfoTests.release.xcconfig"; sourceTree = "<group>"; };
 		76B5491D1E5D955000847D6C /* TRZXTradeInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRZXTradeInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76B549211E5D955000847D6C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		76B549231E5D955000847D6C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +64,21 @@
 		76B549411E5D955000847D6C /* TRZXTradeInfoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TRZXTradeInfoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76B549451E5D955000847D6C /* TRZXTradeInfoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRZXTradeInfoUITests.m; sourceTree = "<group>"; };
 		76B549471E5D955000847D6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76B549541E5D990400847D6C /* TRHelpInfoTypeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRHelpInfoTypeViewController.h; sourceTree = "<group>"; };
+		76B549551E5D991900847D6C /* TRHelpInfoTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRHelpInfoTypeViewController.m; sourceTree = "<group>"; };
+		76B549571E5D993400847D6C /* SCPopCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCPopCollectionCell.h; sourceTree = "<group>"; };
+		76B549581E5D993400847D6C /* SCPopCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCPopCollectionCell.m; sourceTree = "<group>"; };
+		76B549591E5D993400847D6C /* SCPopCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCPopCollectionCell.xib; sourceTree = "<group>"; };
+		76B5495F1E5D997500847D6C /* TRNewChildrenModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRNewChildrenModel.m; sourceTree = "<group>"; };
+		76B549601E5D997500847D6C /* TRNewTradeInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRNewTradeInfoModel.h; sourceTree = "<group>"; };
+		76B549611E5D997500847D6C /* TRNewTradeInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRNewTradeInfoModel.m; sourceTree = "<group>"; };
+		76B549671E5D9A3900847D6C /* TRZXTradeInfoRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXTradeInfoRequest.h; sourceTree = "<group>"; };
+		76B549681E5D9A3900847D6C /* TRZXTradeInfoRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXTradeInfoRequest.m; sourceTree = "<group>"; };
+		7C6F7ACFBBC1AFCC569FE273 /* Pods-TRZXTradeInfo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRZXTradeInfo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TRZXTradeInfo/Pods-TRZXTradeInfo.release.xcconfig"; sourceTree = "<group>"; };
+		891EA2B6FDEDA0F94CA37204 /* Pods-TRZXTradeInfoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRZXTradeInfoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TRZXTradeInfoUITests/Pods-TRZXTradeInfoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B20907FD95E1AEBC8DE9E195 /* libPods-TRZXTradeInfo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TRZXTradeInfo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D649E6A8EDE9FB2C3A6DA33B /* Pods-TRZXTradeInfo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRZXTradeInfo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TRZXTradeInfo/Pods-TRZXTradeInfo.debug.xcconfig"; sourceTree = "<group>"; };
+		F2C3F360B777CBC882F258F7 /* libPods-TRZXTradeInfoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TRZXTradeInfoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4913E760FD059649E74F34A /* libPods-TRZXTradeInfo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D88377364744863AB9BA347C /* libPods-TRZXTradeInfoTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +102,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70FA49BAB2DA46ACB84B48C7 /* libPods-TRZXTradeInfoUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5FC89FFC361723DABFBC9360 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B20907FD95E1AEBC8DE9E195 /* libPods-TRZXTradeInfo.a */,
+				62BC42E55A2AFE89212BA327 /* libPods-TRZXTradeInfoTests.a */,
+				F2C3F360B777CBC882F258F7 /* libPods-TRZXTradeInfoUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		76B549141E5D955000847D6C = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +126,8 @@
 				76B549391E5D955000847D6C /* TRZXTradeInfoTests */,
 				76B549441E5D955000847D6C /* TRZXTradeInfoUITests */,
 				76B5491E1E5D955000847D6C /* Products */,
+				922F169B9970AEB0D9D72197 /* Pods */,
+				5FC89FFC361723DABFBC9360 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,8 +187,31 @@
 		76B549531E5D985C00847D6C /* TRZXTradeInfo */ = {
 			isa = PBXGroup;
 			children = (
+				76B549541E5D990400847D6C /* TRHelpInfoTypeViewController.h */,
+				76B549551E5D991900847D6C /* TRHelpInfoTypeViewController.m */,
+				76B549571E5D993400847D6C /* SCPopCollectionCell.h */,
+				76B549581E5D993400847D6C /* SCPopCollectionCell.m */,
+				76B549591E5D993400847D6C /* SCPopCollectionCell.xib */,
+				76B5495F1E5D997500847D6C /* TRNewChildrenModel.m */,
+				76B549601E5D997500847D6C /* TRNewTradeInfoModel.h */,
+				76B549611E5D997500847D6C /* TRNewTradeInfoModel.m */,
+				76B549671E5D9A3900847D6C /* TRZXTradeInfoRequest.h */,
+				76B549681E5D9A3900847D6C /* TRZXTradeInfoRequest.m */,
 			);
 			path = TRZXTradeInfo;
+			sourceTree = "<group>";
+		};
+		922F169B9970AEB0D9D72197 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D649E6A8EDE9FB2C3A6DA33B /* Pods-TRZXTradeInfo.debug.xcconfig */,
+				7C6F7ACFBBC1AFCC569FE273 /* Pods-TRZXTradeInfo.release.xcconfig */,
+				68C5B1A3CFB9B9C26C1A9B64 /* Pods-TRZXTradeInfoTests.debug.xcconfig */,
+				6EF20D5D7762040686DA7096 /* Pods-TRZXTradeInfoTests.release.xcconfig */,
+				891EA2B6FDEDA0F94CA37204 /* Pods-TRZXTradeInfoUITests.debug.xcconfig */,
+				0F6AB42F9B267BBDF7655C7B /* Pods-TRZXTradeInfoUITests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,9 +221,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76B5494A1E5D955000847D6C /* Build configuration list for PBXNativeTarget "TRZXTradeInfo" */;
 			buildPhases = (
+				B135B1EB5C74F87A2317837A /* [CP] Check Pods Manifest.lock */,
 				76B549191E5D955000847D6C /* Sources */,
 				76B5491A1E5D955000847D6C /* Frameworks */,
 				76B5491B1E5D955000847D6C /* Resources */,
+				9706FFADE8B5CDB7852BD363 /* [CP] Embed Pods Frameworks */,
+				FAEE8976344D7CD91CCE3254 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -172,9 +241,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76B5494D1E5D955000847D6C /* Build configuration list for PBXNativeTarget "TRZXTradeInfoTests" */;
 			buildPhases = (
+				284A824871502F2B64978531 /* [CP] Check Pods Manifest.lock */,
 				76B549321E5D955000847D6C /* Sources */,
 				76B549331E5D955000847D6C /* Frameworks */,
 				76B549341E5D955000847D6C /* Resources */,
+				E04EB07C8402EE284417DDAF /* [CP] Embed Pods Frameworks */,
+				883AE44DE3CEB28BF93BA7E0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -190,9 +262,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76B549501E5D955000847D6C /* Build configuration list for PBXNativeTarget "TRZXTradeInfoUITests" */;
 			buildPhases = (
+				56B10045194F0749C0BBC707 /* [CP] Check Pods Manifest.lock */,
 				76B5493D1E5D955000847D6C /* Sources */,
 				76B5493E1E5D955000847D6C /* Frameworks */,
 				76B5493F1E5D955000847D6C /* Resources */,
+				7C2A50561FCB87B9C1F38278 /* [CP] Embed Pods Frameworks */,
+				C12F562748E55A6EE23A5FA5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -255,6 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76B549301E5D955000847D6C /* LaunchScreen.storyboard in Resources */,
+				76B5495B1E5D993400847D6C /* SCPopCollectionCell.xib in Resources */,
 				76B5492D1E5D955000847D6C /* Assets.xcassets in Resources */,
 				76B5492B1E5D955000847D6C /* Main.storyboard in Resources */,
 			);
@@ -276,12 +352,155 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		284A824871502F2B64978531 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		56B10045194F0749C0BBC707 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7C2A50561FCB87B9C1F38278 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TRZXTradeInfoUITests/Pods-TRZXTradeInfoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		883AE44DE3CEB28BF93BA7E0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TRZXTradeInfoTests/Pods-TRZXTradeInfoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9706FFADE8B5CDB7852BD363 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TRZXTradeInfo/Pods-TRZXTradeInfo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B135B1EB5C74F87A2317837A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C12F562748E55A6EE23A5FA5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TRZXTradeInfoUITests/Pods-TRZXTradeInfoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E04EB07C8402EE284417DDAF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TRZXTradeInfoTests/Pods-TRZXTradeInfoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAEE8976344D7CD91CCE3254 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TRZXTradeInfo/Pods-TRZXTradeInfo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		76B549191E5D955000847D6C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76B549621E5D997500847D6C /* TRNewChildrenModel.m in Sources */,
 				76B549281E5D955000847D6C /* ViewController.m in Sources */,
+				76B549691E5D9A3900847D6C /* TRZXTradeInfoRequest.m in Sources */,
+				76B5495A1E5D993400847D6C /* SCPopCollectionCell.m in Sources */,
+				76B549561E5D991900847D6C /* TRHelpInfoTypeViewController.m in Sources */,
+				76B549631E5D997500847D6C /* TRNewTradeInfoModel.m in Sources */,
 				76B549251E5D955000847D6C /* AppDelegate.m in Sources */,
 				76B549221E5D955000847D6C /* main.m in Sources */,
 			);
@@ -430,6 +649,7 @@
 		};
 		76B5494B1E5D955000847D6C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D649E6A8EDE9FB2C3A6DA33B /* Pods-TRZXTradeInfo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TRZXTradeInfo/Info.plist;
@@ -441,6 +661,7 @@
 		};
 		76B5494C1E5D955000847D6C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C6F7ACFBBC1AFCC569FE273 /* Pods-TRZXTradeInfo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TRZXTradeInfo/Info.plist;
@@ -452,6 +673,7 @@
 		};
 		76B5494E1E5D955000847D6C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68C5B1A3CFB9B9C26C1A9B64 /* Pods-TRZXTradeInfoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = TRZXTradeInfoTests/Info.plist;
@@ -464,6 +686,7 @@
 		};
 		76B5494F1E5D955000847D6C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EF20D5D7762040686DA7096 /* Pods-TRZXTradeInfoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = TRZXTradeInfoTests/Info.plist;
@@ -476,6 +699,7 @@
 		};
 		76B549511E5D955000847D6C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 891EA2B6FDEDA0F94CA37204 /* Pods-TRZXTradeInfoUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = TRZXTradeInfoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -487,6 +711,7 @@
 		};
 		76B549521E5D955000847D6C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F6AB42F9B267BBDF7655C7B /* Pods-TRZXTradeInfoUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = TRZXTradeInfoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
