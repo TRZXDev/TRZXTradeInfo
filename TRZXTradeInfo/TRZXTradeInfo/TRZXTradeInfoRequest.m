@@ -7,6 +7,8 @@
 //
 
 #import "TRZXTradeInfoRequest.h"
+#import "TRZXNetwork.h"
+
 
 @implementation TRZXTradeInfoRequest
 
@@ -17,6 +19,13 @@
     NSDictionary *param = @{@"requestType":@"Trade_Api",
                             @"apiType":@"trades",
                             };
+    [TRZXNetwork requestWithUrl:nil params:param method:POST cachePolicy:NetworkingReloadIgnoringLocalCacheData callbackBlock:^(id response, NSError *error) {
+        if (response) {
+            success(response);
+        }else{
+            failure(error);
+        }
+    }];
     
 }
 
@@ -31,6 +40,14 @@
                             @"type":typeStr,
                             @"authType":authTypeStr==nil?@"":authTypeStr,
                             @"orgId":orgId?orgId:@""};
+    
+    [TRZXNetwork requestWithUrl:nil params:param method:POST cachePolicy:NetworkingReloadIgnoringLocalCacheData callbackBlock:^(id response, NSError *error) {
+        if (response) {
+            success(response);
+        }else{
+            failure(error);
+        }
+    }];
     
 }
 

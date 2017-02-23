@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Masonry.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-TRZXTradeInfo.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -41,6 +46,47 @@
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict/>
+	<dict>
+		<key>21FF55A4625025DABDA5C7D7D1DB64F6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>35ACD4576ABC6787FD9D238BF8C4A7BB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9DC8D9E02903E93BD0B2FEC9D846EA20</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9E033EDB5EC0819481B0546434FA577B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A316B54C67E947D23CECD230FA5BFAEF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A51218B6DBEB9EE82065584A3A18412D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D1102EDFC2F8C021C9E879A5048D5318</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E575FAE5F8DA28A47A9FC88922D2FC91</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
 </dict>
 </plist>

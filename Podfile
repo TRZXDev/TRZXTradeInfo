@@ -10,6 +10,7 @@ target 'TRZXTradeInfo' do
   # Pods for TRZXTradeInfo
     pod 'TRZXNetwork'
     pod 'MJExtension'
+    pod 'Masonry'
 
   target 'TRZXTradeInfoTests' do
     inherit! :search_paths

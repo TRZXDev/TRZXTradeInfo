@@ -6,6 +6,9 @@
 //  Copyright © 2016年 Tiancaila. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "TRHelpBaseViewController.h"
 
 
 typedef NS_ENUM(NSInteger, HelpInfoType) {
@@ -24,7 +27,7 @@ typedef NS_ENUM(NSInteger, HelpInfoType) {
 /**
  *  服务行业
  */
-@interface TRHelpInfoTypeViewController : MainViewController
+@interface TRHelpInfoTypeViewController : TRHelpBaseViewController
 
 @property (nonatomic,weak)id <TRHelpInfoDelegate> delegate;
 

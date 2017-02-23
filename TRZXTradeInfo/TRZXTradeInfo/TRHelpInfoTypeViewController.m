@@ -11,8 +11,16 @@
 #import "SCPopCollectionCell.h"
 #import "TRNewChildrenModel.h"
 #import "TRNewTradeInfoModel.h"
-#import "TZRAllModel.h"
+#import "TRZXTradeInfoRequest.h"
+#import "MJExtension.h"
 
+
+#define SCREEN_WIDTH ([[UIScreen mainScreen] bounds].size.width)
+#define SCREEN_HEIGHT ([[UIScreen mainScreen] bounds].size.height)
+#define RGBA(R/*红*/, G/*绿*/, B/*蓝*/, A/*透明*/) [UIColor colorWithRed:R/255.f green:G/255.f blue:B/255.f alpha:A]
+#define backColor [UIColor colorWithRed:240.0/255.0 green:239.0/255.0 blue:244.0/255.0 alpha:1]
+#define moneyColor [UIColor colorWithRed:209.0/255.0 green:187.0/255.0 blue:114.0/255.0 alpha:1]
+#define kWhiteColor         [UIColor whiteColor]
 
 @interface CollectionHeaderView : UICollectionReusableView
 
@@ -28,7 +36,7 @@
             UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(10, 0, SCREEN_WIDTH, 35)];
             label.textAlignment = NSTextAlignmentLeft;
             label.font = [UIFont systemFontOfSize:16];
-            label.textColor = heizideColor;
+            label.textColor = [UIColor colorWithRed:90.0/255.0 green:90.0/255.0 blue:90.0/255.0 alpha:1];
             label;
         });
         [self addSubview:label];
@@ -83,7 +91,7 @@
     }
     
     
-    self.mainTitle.textColor = heizideColor;
+    self.mainTitle.textColor = [UIColor colorWithRed:90.0/255.0 green:90.0/255.0 blue:90.0/255.0 alpha:1];
     NSString *str = @"\n";
     NSRange range = [self.mainTitle.text rangeOfString:str];
     NSInteger startIndex = self.mainTitle.text.length - (range.location + range.length);
@@ -93,7 +101,7 @@
     
     NSMutableAttributedString *attribute = [[NSMutableAttributedString alloc]initWithString:self.mainTitle.text];
     [attribute addAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:10]} range:range2];
-    [attribute addAttributes:@{NSForegroundColorAttributeName:TRZXMainColor,NSFontAttributeName:[UIFont systemFontOfSize:16]} range:NSMakeRange(range2.location, 1)];
+    [attribute addAttributes:@{NSForegroundColorAttributeName:[UIColor colorWithRed:215.0/255.0 green:0/255.0 blue:15.0/255.0 alpha:1],NSFontAttributeName:[UIFont systemFontOfSize:16]} range:NSMakeRange(range2.location, 1)];
     
     self.mainTitle.attributedText = attribute;
     
@@ -111,7 +119,7 @@
 
 - (void)loadData
 {
-    [TZRAllModel getTradeInfo:nil Success:^(id object) {
+    [TRZXTradeInfoRequest getTradeInfo:nil Success:^(id object) {
         
         
         if ([object[@"status_code"] isEqualToString:@"200"]) {
@@ -157,7 +165,7 @@
     cell.contentView.layer.masksToBounds = YES;
     cell.titleLabel.numberOfLines = 2;
     cell.titleLabel.backgroundColor = kWhiteColor;
-    cell.titleLabel.textColor = heizideColor;
+    cell.titleLabel.textColor = [UIColor colorWithRed:90.0/255.0 green:90.0/255.0 blue:90.0/255.0 alpha:1];
     
     for (TRNewChildrenModel *sele in self.seletedTrade) {
         if ([sele.mid isEqual:subModel.mid]) {
@@ -252,12 +260,12 @@
         //存在 则为已选中 设置为未选中状态 删除数据 背景颜色 字体颜色 改变
         [self.seletedTrade removeObject:isExistModel];
         cell.titleLabel.backgroundColor = kWhiteColor;
-        cell.titleLabel.textColor = heizideColor;
+        cell.titleLabel.textColor = [UIColor colorWithRed:90.0/255.0 green:90.0/255.0 blue:90.0/255.0 alpha:1];
         cell.contentView.layer.borderColor = kWhiteColor.CGColor;
     }else{
         
         if (self.seletedTrade.count >= self.maxSelect) {
-            [LCProgressHUD showInfoMsg:[NSString stringWithFormat:@"最多选择%ld项",self.maxSelect]];
+//            [LCProgressHUD showInfoMsg:[NSString stringWithFormat:@"最多选择%ld项",self.maxSelect]];
             return;
         }
         //设置为选中状态
@@ -274,7 +282,7 @@
 {
  
     if (self.seletedTrade.count == 0) {
-        [LCProgressHUD showInfoMsg:@"至少选择一项"];
+//        [LCProgressHUD showInfoMsg:@"至少选择一项"];
         return;
     }
     
@@ -308,9 +316,9 @@
         }
     }
     
-    [TZRAllModel  getTZRguanzhubaocunDataTradeIds:str TypeStr:self.typeStr AuthType:self.authTypeStr OrgId:self.mid Success:^(id object) {
+    [TRZXTradeInfoRequest  getTZRguanzhubaocunDataTradeIds:str TypeStr:self.typeStr AuthType:self.authTypeStr OrgId:self.mid Success:^(id object) {
         if ([object[@"status_code"] isEqualToString:@"200"]) {
-            [LCProgressHUD showInfoMsg:@"保存成功"]; // 显示提示
+//            [LCProgressHUD showInfoMsg:@"保存成功"]; // 显示提示
             
             NSMutableString *str = [[NSMutableString alloc] init];
             for (int i = 0; i< self.seletedTrade.count; i++) {
@@ -329,7 +337,7 @@
         }
     } failure:^(NSError *error) {
         
-        [LCProgressHUD showInfoMsg:@"服务器错误"];
+//        [LCProgressHUD showInfoMsg:@"服务器错误"];
     }];
     
 //    if (self.enterButtonClickBlock) {

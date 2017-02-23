@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "TRHelpInfoTypeViewController.h"
 
 @interface ViewController ()
 
@@ -19,6 +20,10 @@
 
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    TRHelpInfoTypeViewController *help = [[TRHelpInfoTypeViewController alloc]init];
+    [self.navigationController pushViewController:help animated:YES];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
