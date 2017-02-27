@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		70FA49BAB2DA46ACB84B48C7 /* libPods-TRZXTradeInfoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2C3F360B777CBC882F258F7 /* libPods-TRZXTradeInfoUITests.a */; };
+		76AC78361E63BF0400A882F1 /* CTMediator+TradeInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 76AC78351E63BF0400A882F1 /* CTMediator+TradeInfo.m */; };
+		76AC78391E63D22000A882F1 /* Target_TradeInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 76AC78381E63D22000A882F1 /* Target_TradeInfo.m */; };
 		76B549221E5D955000847D6C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B549211E5D955000847D6C /* main.m */; };
 		76B549251E5D955000847D6C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B549241E5D955000847D6C /* AppDelegate.m */; };
 		76B549281E5D955000847D6C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B549271E5D955000847D6C /* ViewController.m */; };
@@ -50,6 +52,10 @@
 		62BC42E55A2AFE89212BA327 /* libPods-TRZXTradeInfoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TRZXTradeInfoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68C5B1A3CFB9B9C26C1A9B64 /* Pods-TRZXTradeInfoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRZXTradeInfoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TRZXTradeInfoTests/Pods-TRZXTradeInfoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6EF20D5D7762040686DA7096 /* Pods-TRZXTradeInfoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRZXTradeInfoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TRZXTradeInfoTests/Pods-TRZXTradeInfoTests.release.xcconfig"; sourceTree = "<group>"; };
+		76AC78341E63BF0400A882F1 /* CTMediator+TradeInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CTMediator+TradeInfo.h"; sourceTree = "<group>"; };
+		76AC78351E63BF0400A882F1 /* CTMediator+TradeInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+TradeInfo.m"; sourceTree = "<group>"; };
+		76AC78371E63D22000A882F1 /* Target_TradeInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_TradeInfo.h; sourceTree = "<group>"; };
+		76AC78381E63D22000A882F1 /* Target_TradeInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_TradeInfo.m; sourceTree = "<group>"; };
 		76B5491D1E5D955000847D6C /* TRZXTradeInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRZXTradeInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76B549211E5D955000847D6C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		76B549231E5D955000847D6C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -207,6 +213,10 @@
 				76B549611E5D997500847D6C /* TRNewTradeInfoModel.m */,
 				76B549671E5D9A3900847D6C /* TRZXTradeInfoRequest.h */,
 				76B549681E5D9A3900847D6C /* TRZXTradeInfoRequest.m */,
+				76AC78341E63BF0400A882F1 /* CTMediator+TradeInfo.h */,
+				76AC78351E63BF0400A882F1 /* CTMediator+TradeInfo.m */,
+				76AC78371E63D22000A882F1 /* Target_TradeInfo.h */,
+				76AC78381E63D22000A882F1 /* Target_TradeInfo.m */,
 			);
 			path = TRZXTradeInfo;
 			sourceTree = "<group>";
@@ -506,6 +516,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76AC78361E63BF0400A882F1 /* CTMediator+TradeInfo.m in Sources */,
 				76B549621E5D997500847D6C /* TRNewChildrenModel.m in Sources */,
 				76B549281E5D955000847D6C /* ViewController.m in Sources */,
 				76B549691E5D9A3900847D6C /* TRZXTradeInfoRequest.m in Sources */,
@@ -513,6 +524,7 @@
 				76B549561E5D991900847D6C /* TRHelpInfoTypeViewController.m in Sources */,
 				76B549631E5D997500847D6C /* TRNewTradeInfoModel.m in Sources */,
 				76B549251E5D955000847D6C /* AppDelegate.m in Sources */,
+				76AC78391E63D22000A882F1 /* Target_TradeInfo.m in Sources */,
 				76B549221E5D955000847D6C /* main.m in Sources */,
 				76B5496D1E5E709E00847D6C /* TRHelpBaseViewController.m in Sources */,
 			);

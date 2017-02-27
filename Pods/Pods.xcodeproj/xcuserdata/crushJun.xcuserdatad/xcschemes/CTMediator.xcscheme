@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '2B7627A6ADD865D79DAF78EF54CA9E11'
-               BlueprintName = 'TRZXNetwork'
+               BlueprintIdentifier = 'E860DBFDF4A7872F6049CBAEAA721AD9'
+               BlueprintName = 'CTMediator'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libTRZXNetwork.a'>
+               BuildableName = 'libCTMediator.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

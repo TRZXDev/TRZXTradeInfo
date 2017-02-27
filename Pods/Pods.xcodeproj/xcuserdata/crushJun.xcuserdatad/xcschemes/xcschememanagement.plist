@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>CTMediator.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MJExtension.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,12 +52,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>21FF55A4625025DABDA5C7D7D1DB64F6</key>
+		<key>107B5E6542E82A1C08D41F873DF30136</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2B7627A6ADD865D79DAF78EF54CA9E11</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>35ACD4576ABC6787FD9D238BF8C4A7BB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>94BAE3A6DB39454C34A9E4601F57CBCE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,17 +87,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A51218B6DBEB9EE82065584A3A18412D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>D1102EDFC2F8C021C9E879A5048D5318</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E575FAE5F8DA28A47A9FC88922D2FC91</key>
+		<key>E860DBFDF4A7872F6049CBAEAA721AD9</key>
 		<dict>
 			<key>primary</key>
 			<true/>

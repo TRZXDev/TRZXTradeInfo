@@ -329,8 +329,8 @@
                     [str appendString:[NSString stringWithFormat:@",%@",model.trade]];
                 }
             }
-            
-            [self.delegate TRHelpInfoChooseTradeInfo:str andArray:self.seletedTrade];
+             self.enterButtonClickBlock(self.seletedTrade,str);
+//            [self.delegate TRHelpInfoChooseTradeInfo:str andArray:self.seletedTrade];
             [self.navigationController popViewControllerAnimated:YES];
         } else {
                

@@ -21,6 +21,7 @@ Pod::Spec.new do |s|
   s.dependency 'TRZXNetwork'  
   s.dependency 'Masonry'
   s.dependency 'MJExtension'
+  s.dependency 'CTMediator'
 
 
   s.requires_arc = true

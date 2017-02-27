@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "TRHelpInfoTypeViewController.h"
+#import "CTMediator+TradeInfo.h"
 
 @interface ViewController ()
 
@@ -21,9 +21,13 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    TRHelpInfoTypeViewController *help = [[TRHelpInfoTypeViewController alloc]init];
-    [self.navigationController pushViewController:help animated:YES];
+
+    UIViewController *vc = [[CTMediator sharedInstance]selectTradeWithType:0 mid:@"" selectedTrade:@[] Complete:^(NSArray *info, NSString *type) {
+        NSLog(@"A%@B%@",info,type);
+    }];
+    [self.navigationController pushViewController:vc animated:YES];
 }
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
