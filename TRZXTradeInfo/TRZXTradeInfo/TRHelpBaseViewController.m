@@ -38,9 +38,9 @@
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    self.navigationController.navigationBarHidden = YES;
-    self.navigationController.navigationBar.translucent = YES;
-    [self setAutomaticallyAdjustsScrollViewInsets:NO];
+//    self.navigationController.navigationBarHidden = YES;
+//    self.navigationController.navigationBar.translucent = YES;
+//    [self setAutomaticallyAdjustsScrollViewInsets:NO];
 }
 
 -(void)viewDidLoad
@@ -53,9 +53,9 @@
 #pragma mark - UI
 - (void)setNavigationBar
 {
-    self.navigationController.navigationBarHidden = YES;
-    self.navigationController.navigationBar.translucent = YES;
-    [self setAutomaticallyAdjustsScrollViewInsets:NO];
+//    self.navigationController.navigationBarHidden = YES;
+//    self.navigationController.navigationBar.translucent = YES;
+//    [self setAutomaticallyAdjustsScrollViewInsets:NO];
     
     
     _navigationView = [[UIView alloc] init];
