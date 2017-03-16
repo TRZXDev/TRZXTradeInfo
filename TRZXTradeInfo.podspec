@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "TRZXTradeInfo"
-  s.version      = "0.0.7"
+  s.version      = "0.0.8"
   s.summary      = "TRZXTradeInfo 服务行业组件"
 
   s.homepage     = "https://github.com/TRZXDev/TRZXTradeInfo.git"

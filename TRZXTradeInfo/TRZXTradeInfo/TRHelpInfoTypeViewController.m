@@ -13,6 +13,7 @@
 #import "TRNewTradeInfoModel.h"
 #import "TRZXTradeInfoRequest.h"
 #import "MJExtension.h"
+#import "CollectionHeaderView.h"
 
 
 #define SCREEN_WIDTH ([[UIScreen mainScreen] bounds].size.width)
@@ -22,29 +23,6 @@
 #define moneyColor [UIColor colorWithRed:209.0/255.0 green:187.0/255.0 blue:114.0/255.0 alpha:1]
 #define kWhiteColor         [UIColor whiteColor]
 
-@interface CollectionHeaderView : UICollectionReusableView
-
-@property (nonatomic,strong)UILabel *label;
-@end
-
-@implementation CollectionHeaderView
-
-- (instancetype)initWithFrame:(CGRect)frame {
-    self = [super initWithFrame:frame];
-    if (self) {
-        UILabel *label = ({
-            UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(10, 0, SCREEN_WIDTH, 35)];
-            label.textAlignment = NSTextAlignmentLeft;
-            label.font = [UIFont systemFontOfSize:16];
-            label.textColor = [UIColor colorWithRed:90.0/255.0 green:90.0/255.0 blue:90.0/255.0 alpha:1];
-            label;
-        });
-        [self addSubview:label];
-        self.label = label;
-    }
-    return self;
-}
-@end
 
 @interface TRHelpInfoTypeViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 
