@@ -51,7 +51,24 @@
 
 - (void)setNaviBar
 {
-        self.saveBtn.hidden = NO;
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    btn.frame= CGRectMake(0, 0, 80, 44);
+    [btn setTitle:@"保存"  forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor colorWithRed:209.0/255.0 green:187.0/255.0 blue:114.0/255.0 alpha:1] forState:UIControlStateNormal];
+    btn.titleLabel.font = [UIFont systemFontOfSize: 15.0];
+    [btn addTarget:self action:@selector(rightBarItemAction:
+                                         ) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *btn_right = [[UIBarButtonItem alloc] initWithCustomView:btn];
+    UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc]
+                                       initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace
+                                       target:nil action:nil];
+    negativeSpacer.width = -20;
+    self.navigationItem.rightBarButtonItems = [NSArray arrayWithObjects:negativeSpacer, btn_right, nil];
+    self.saveBtn = btn;
+    [self.saveBtn setTitle:@"保存" forState:UIControlStateNormal];
+    [self.saveBtn setTitle:@"保存" forState:UIControlStateHighlighted];
+
+    self.saveBtn.hidden = NO;
     if (self.type == HelpInfoType_Expert) {
         self.maxSelect  = 5;
         self.typeStr = @"1";
@@ -89,22 +106,7 @@
     [self.mainTitle sizeToFit];
     self.navigationItem.titleView = self.mainTitle;
 //    [self.backBtn setTitle:@"返回" forState:UIControlStateNormal];
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    btn.frame= CGRectMake(0, 0, 80, 44);
-    [btn setTitle:@"保存"  forState:UIControlStateNormal];
-    [btn setTitleColor:[UIColor colorWithRed:209.0/255.0 green:187.0/255.0 blue:114.0/255.0 alpha:1] forState:UIControlStateNormal];
-    btn.titleLabel.font = [UIFont systemFontOfSize: 15.0];
-    [btn addTarget:self action:@selector(rightBarItemAction:
-                                         ) forControlEvents:UIControlEventTouchUpInside];
-    UIBarButtonItem *btn_right = [[UIBarButtonItem alloc] initWithCustomView:btn];
-    UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc]
-                                       initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace
-                                       target:nil action:nil];
-    negativeSpacer.width = -20;
-    self.navigationItem.rightBarButtonItems = [NSArray arrayWithObjects:negativeSpacer, btn_right, nil];
-    self.saveBtn = btn;
-    [self.saveBtn setTitle:@"保存" forState:UIControlStateNormal];
-    [self.saveBtn setTitle:@"保存" forState:UIControlStateHighlighted];
+   
 }
 
 - (void)addTopView{

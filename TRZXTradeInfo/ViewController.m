@@ -22,7 +22,7 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
 
-    UIViewController *vc = [[CTMediator sharedInstance]selectTradeWithType:0 mid:@"" selectedTrade:@[] Complete:^(NSArray *info, NSString *type) {
+    UIViewController *vc = [[CTMediator sharedInstance]selectTradeWithType:1 mid:@"" selectedTrade:@[] Complete:^(NSArray *info, NSString *type) {
         NSLog(@"A%@B%@",info,type);
     }];
     [self.navigationController pushViewController:vc animated:YES];
