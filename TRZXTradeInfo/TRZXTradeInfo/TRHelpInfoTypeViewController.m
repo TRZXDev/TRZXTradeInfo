@@ -14,6 +14,7 @@
 #import "TRZXTradeInfoRequest.h"
 #import "MJExtension.h"
 #import "CollectionHeaderView.h"
+#import <LCProgressHUD/LCProgressHUD.h>
 
 
 #define SCREEN_WIDTH ([[UIScreen mainScreen] bounds].size.width)
@@ -262,7 +263,7 @@
     }else{
         
         if (self.seletedTrade.count >= self.maxSelect) {
-//            [LCProgressHUD showInfoMsg:[NSString stringWithFormat:@"最多选择%ld项",self.maxSelect]];
+            [LCProgressHUD showInfoMsg:[NSString stringWithFormat:@"最多选择%ld项",self.maxSelect]];
             return;
         }
         //设置为选中状态
@@ -278,7 +279,7 @@
 - (void)rightBarItemAction:(UIButton *)gesture{
  
     if (self.seletedTrade.count == 0) {
-//        [LCProgressHUD showInfoMsg:@"至少选择一项"];
+        [LCProgressHUD showInfoMsg:@"至少选择一项"];
         return;
     }
     
@@ -314,7 +315,7 @@
     
     [TRZXTradeInfoRequest  getTZRguanzhubaocunDataTradeIds:str TypeStr:self.typeStr AuthType:self.authTypeStr OrgId:self.mid Success:^(id object) {
         if ([object[@"status_code"] isEqualToString:@"200"]) {
-//            [LCProgressHUD showInfoMsg:@"保存成功"]; // 显示提示
+            [LCProgressHUD showInfoMsg:@"保存成功"]; // 显示提示
             
             NSMutableString *str = [[NSMutableString alloc] init];
             for (int i = 0; i< self.seletedTrade.count; i++) {
@@ -333,7 +334,7 @@
         }
     } failure:^(NSError *error) {
         
-//        [LCProgressHUD showInfoMsg:@"服务器错误"];
+        [LCProgressHUD showInfoMsg:@"服务器错误"];
     }];
     
 //    if (self.enterButtonClickBlock) {

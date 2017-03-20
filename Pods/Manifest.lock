@@ -15,7 +15,10 @@ PODS:
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
   - CTMediator (0.0.3)
+  - LCProgressHUD (1.0.7):
+    - MBProgressHUD (~> 0.9.1)
   - Masonry (1.0.2)
+  - MBProgressHUD (0.9.2)
   - MJExtension (3.0.13)
   - TRZXNetwork (0.0.7):
     - AFNetworking
@@ -24,6 +27,7 @@ PODS:
 
 DEPENDENCIES:
   - CTMediator
+  - LCProgressHUD
   - Masonry
   - MJExtension
   - TRZXNetwork
@@ -31,11 +35,13 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   CTMediator: c9a1203561e2232cb9a72822659159a02ae3cf20
+  LCProgressHUD: f7a48802aa03dec6aae5e907908434cbf699b241
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   TRZXNetwork: d6ce75a420218ed4b6b95f10220442f175947125
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: e5e4ee5a94b54558aac9f8376b28825e2bee4043
+PODFILE CHECKSUM: 3958426c52d97a676f2ca77cd1f8cfb60180f6aa
 
 COCOAPODS: 1.2.1.beta.1

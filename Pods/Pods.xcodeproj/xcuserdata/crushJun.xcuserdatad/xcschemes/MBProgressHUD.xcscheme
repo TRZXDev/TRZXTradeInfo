@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'E4E9B616EBCB52A64C36F41AC239ADBB'
-               BlueprintName = 'TRZXNetwork'
+               BlueprintIdentifier = '699CC5739D60BF9EBD043559A847E5E4'
+               BlueprintName = 'MBProgressHUD'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libTRZXNetwork.a'>
+               BuildableName = 'libMBProgressHUD.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

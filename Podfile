@@ -12,6 +12,7 @@ target 'TRZXTradeInfo' do
     pod 'MJExtension'
     pod 'Masonry'
     pod 'CTMediator'
+    pod 'LCProgressHUD'
 
   target 'TRZXTradeInfoTests' do
     inherit! :search_paths

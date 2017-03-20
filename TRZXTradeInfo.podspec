@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "TRZXTradeInfo"
-  s.version      = "0.0.9"
+  s.version      = "0.1.0"
   s.summary      = "TRZXTradeInfo 服务行业组件"
 
   s.homepage     = "https://github.com/TRZXDev/TRZXTradeInfo.git"
@@ -22,6 +22,7 @@ Pod::Spec.new do |s|
   s.dependency 'Masonry'
   s.dependency 'MJExtension'
   s.dependency 'CTMediator'
+  s.dependency 'LCProgressHUD'
 
 
   s.requires_arc = true
